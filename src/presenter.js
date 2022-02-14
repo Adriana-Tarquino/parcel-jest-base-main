@@ -13,3 +13,19 @@ form.addEventListener("submit", (event) => {
 
   div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
 });
+
+
+const first1 = document.querySelector("#primer-mult");
+const second1 = document.querySelector("#segundo-mult");
+const form1 = document.querySelector("#multipli-form");
+const mult = document.querySelector("#resultado-mult");
+
+form1.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const first= Number.parseInt(first1.value);
+  const second = Number.parseInt(second1.value);
+
+  //mult.innerHTML = "<p>" * multiplicar(first, second) + "</p>";
+  mult.innerHTML = "<p>"+ first * second + "</p>"
+});
